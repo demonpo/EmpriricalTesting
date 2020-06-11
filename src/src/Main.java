@@ -7,7 +7,7 @@ class Main {
     }
 
 
-    static public void triangleProblem(){
+     public static void triangleProblem(){
         int a,b,c;
         boolean c1,c2,c3;
 
@@ -25,6 +25,7 @@ class Main {
             c1 = (1 <= a) && (a <= 200);
             c2 = (1 <= b) && (b <= 200);
             c3 = (1 <= c) && (c <= 200);
+
             if(!c1){
                 System.out.println("Value of a is not in the range of permitted values");
             }
@@ -38,7 +39,6 @@ class Main {
             System.out.println("Side B is " +b);
             System.out.println("Side C is " +c);
         }while (!(c1 && c2 && c3));
-        
 
         // Step 2: Is a trinagle?
         boolean isTriangle;
@@ -50,7 +50,6 @@ class Main {
         }
 
         //Step 3: Determine Triangle type
-
         if(isTriangle){
             if((a==b)&&(b==c)){
                 System.out.println("Equilateral");
@@ -63,11 +62,9 @@ class Main {
             }
 
         }
-
-
-
-
-
+        else {
+            System.out.println("Not triangle");
+        }
 
     }
 
